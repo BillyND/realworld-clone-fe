@@ -1,0 +1,119 @@
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.article-preview {
+    margin: 10px !important;
+}
+
+.home-container {
+    padding: 0 10px;
+}
+
+li.previous {
+    display: none;
+}
+
+li.next {
+    display: none;
+}
+
+.article-tagList {
+    display: flex;
+    gap: 5px;
+    width: fit-content !important;
+
+    .tagList {
+        border: 1px solid rgba(184, 184, 184, 0.502);
+        padding: 1px 5px;
+        border-radius: 15px;
+        color: rgba(98, 98, 98, 0.502);
+        font-size: 14px;
+    }
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.header-user-login {
+    display: flex;
+    gap: 10px;
+
+    img {
+        border-radius: 50%;
+        height: 25px;
+        margin-top: 7px;
+    }
+}
+
+.read-more-article {
+    // background-color: red;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.no-article {
+    margin-bottom: 20px;
+}
+
+.card-footer-comment {
+    position: relative;
+
+    .icon-delete {
+        background-color: rgb(240, 240, 240);
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 17px;
+        color: gray;
+        cursor: pointer;
+    }
+
+    .icon-delete:hover {
+        color: black;
+    }
+}
+
+
+.icon-article {
+    margin-bottom: -3px;
+}
+
+.icon-setting-profile {
+    margin-bottom: -2px;
+}
+
+.btn-push-article {
+    margin-top: 20px;
+}
+
+.tag-list-new-article {
+    margin-top: -13px;
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    flex-wrap: wrap;
+
+    .tag-post {
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 2px 10px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .icon-close-tag {
+            cursor: pointer;
+            font-size: 12px;
+        }
+    }
+
+}
