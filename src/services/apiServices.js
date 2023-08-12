@@ -2,10 +2,10 @@ import axios from "axios";
 import dotenv from "dotenv";
 // dotenv.config();
 
-// const baseUrl = "https://social-media-server-tau-seven.vercel.app/api";
+const baseUrl = "https://social-media-server-tau-seven.vercel.app/api";
 // const baseUrl = "https://api.realworld.io/api";
 
-const baseUrl = "http://localhost:8000/api";
+// const baseUrl = "http://localhost:8000/api";
 
 const tokenHeaders = (token) => ({
   headers: {
