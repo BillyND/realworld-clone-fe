@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const baseUrl = "https://api.realworld.io/api";
+// const baseUrl = "https://api.realworld.io/api";
+const baseUrl = "https://social-media-server-tau-seven.vercel.app/api";
 
 const tokenHeaders = (token) => ({
     headers: {
