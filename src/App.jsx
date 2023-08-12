@@ -1,27 +1,28 @@
-import { useEffect, useState } from 'react'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import './App.scss'
-import Layout from './Layout'
-import { ToastContainer } from 'react-toastify'
-import { Context } from './Context'
-import BackdropLoading from './components/BackDropLoading'
+import { useEffect, useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "./App.scss";
+import { Context } from "./Context";
+import Layout from "./Layout";
+import BackdropLoading from "./components/BackDropLoading";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
-  const [userLogin, setUserLogin] = useState()
-  const infoUser = localStorage.getItem("userLogin")
-  const [isLoading, setIsLoading] = useState(false)
+  const [userLogin, setUserLogin] = useState();
+  const infoUser = localStorage.getItem("userLogin");
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    infoUser && setUserLogin(JSON.parse(infoUser))
-  }, [])
-
+    infoUser && setUserLogin(JSON.parse(infoUser));
+  }, []);
 
   return (
-    <Context.Provider value={[userLogin, setUserLogin, isLoading, setIsLoading]}>
-      <div className='app-container'>
+    <Context.Provider
+      value={[userLogin, setUserLogin, isLoading, setIsLoading]}
+    >
+      <div className="app-container">
         <Header />
-        <div className='content-app'>
+        <div className="content-app">
           <Layout />
         </div>
         <Footer />
@@ -37,14 +38,11 @@ function App() {
           pauseOnHover
           theme="light"
         />
-      </div >
-      {
-        isLoading && <BackdropLoading />
-      }
+      </div>
+      {isLoading && <BackdropLoading />}
       {/* <BackdropLoading /> */}
     </Context.Provider>
-
-  )
+  );
 }
 
-export default App
+export default App;
